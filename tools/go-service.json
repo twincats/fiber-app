@@ -1,0 +1,16 @@
+{
+	"Name": "go-serviceApp",
+	"DisplayName": "Go Service Runner WebApp",
+	"Description": "Running WebApp as service via Golang service, (only work on Windows).",
+	"Dir": ".\\",
+	"Exec": "C:\\windows\\system32\\cmd.exe",
+	"Args": [
+		"/C",
+		".\\server.exe"
+	],
+	"Env": [],
+	"Stderr": ".\\service_err.log",
+	"Stdout": ".\\service_out.log",
+	"Port": 4001,
+	"Prefork": true
+}

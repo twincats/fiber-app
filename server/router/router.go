@@ -8,6 +8,9 @@ import (
 func SetupRouter(app *fiber.App) {
 
 	app.Get("/", controllers.Index)
-	app.Get("/test", controllers.TestDB)
 
+	api := app.Group("/api")
+
+	//api route
+	ApiRoute(api)
 }
