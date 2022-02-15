@@ -3,7 +3,7 @@ package controllers
 import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gookit/config/v2"
-	"github.com/twincats/fiber-app/models"
+	"github.com/twincats/fiber-app/server/models"
 )
 
 func Index(c *fiber.Ctx) error {

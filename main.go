@@ -7,10 +7,10 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/template/html"
 
-	"github.com/twincats/fiber-app/config"
-	"github.com/twincats/fiber-app/database"
-	"github.com/twincats/fiber-app/middleware"
-	"github.com/twincats/fiber-app/router"
+	"github.com/twincats/fiber-app/server/config"
+	"github.com/twincats/fiber-app/server/database"
+	"github.com/twincats/fiber-app/server/middleware"
+	"github.com/twincats/fiber-app/server/router"
 )
 
 var (
@@ -26,7 +26,7 @@ func main() {
 	config.LoadConfig()
 
 	// Create View Engine
-	engine := html.New("./views", ".html")
+	engine := html.New("./server/views", ".html")
 
 	// Create fiber app
 	app := fiber.New(fiber.Config{

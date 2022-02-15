@@ -1,7 +1,7 @@
 package models
 
 import (
-	"github.com/twincats/fiber-app/database"
+	"github.com/twincats/fiber-app/server/database"
 )
 
 type Manga struct {

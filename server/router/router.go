@@ -2,7 +2,7 @@ package router
 
 import (
 	"github.com/gofiber/fiber/v2"
-	"github.com/twincats/fiber-app/controllers"
+	"github.com/twincats/fiber-app/server/controllers"
 )
 
 func SetupRouter(app *fiber.App) {
